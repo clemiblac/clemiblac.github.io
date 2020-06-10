@@ -1,59 +1,51 @@
-<!DOCTYPE htm>
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
 <html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <TITLE>Clementine Sraha's Bio Page</TITLE>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<style>
+  h1{
+    color:white;
+    background-color: black;
+  }
+  background{
+    color:lightgrey;
+  }
+</style>
+
 <body>
-<h1>Clementine Sraha</h1>
 
+  <header>
+    <h1>Student Bio</h1>
+  </header>
 
-<!-- An image that will act as a stand-in for your picture with an `alt` attribute which gives a very basic description of the image-->
-<img src="http://lorempixel.com/400/200" alt="Placeholder Image"/>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Your Name</h2>
+        <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
+      </section>
+      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+    </section>
 
-<!--Two paragraphs that will have text describing who you are-->
-<p>What is Lorem Ipsum?
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<p>     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
-    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-
-<!--An unordered list of links that connect to your social media pages-->
-<ul>
-    <li>www.Linkedin.com</li>
-    <li>www.facebook.com</li>
-    <li>www.instagram.com</li>
-  </ul>
-  
-<!-- A table that will contain three columns and some data on your favorite movies, songs, books, or activities-->
-<table border="1">
-    <tr>
-      <th>Movie name</th>
-      <th>Leading Actor</th>
-      <th>Year</th>
-    </tr>
-    <tr>
-      <td>Harry Potter and the Sorcerers Stone</td>
-      <td>Daniel Radcliff</td>
-      <td>2007</td>
-    </tr>
-    <tr>
-      <td>Pirates of the Carribean </td>
-      <td>Johnny Depp</td>
-      <td>2012</td>
-    </tr>
-     <tr>
-      <td>Hobbs and Shaw</td>
-      <td>Dwayne Johnson</td>
-      <td>2019</td>
-    </tr>
-</table>
-
-<!--Bonus Question-->
-<a href="https://www.google.com/">My First HTML Bonus</a>
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
+
 </html>
