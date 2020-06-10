@@ -12,27 +12,65 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style>
+ body{
+   background-color: #efeee7;
+   font-style: Georgia;
+   color:#333333;
+   margin-right: 0px;
+   margin-left: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+
+ }
   h1{
-    color:white;
-    background-color: black;
     text-align: center;
+    background-color: black;
+    color:#eee;
+    font-size: 28px;
   }
-  section{
-    background-color:lightgrey;
-    
+  h2{
+    font-size: 24px;
+
   }
-  div.absolute {
-  position: absolute;
-  bottom: 330px;
-  left:25px;
+  .container{
+    margin: 0 auto;
+  }
+
+  #main-bio{
+    float: left;
+    width:70pc;
+  }
+  #contact-info{
+    float: left;
+    width: 30pc;
+    line-height:15;
+  }
+  #bio-image{
+    float:left;
+    widows: 300px;
+  }
+  a:link{
+    color:#d21034;
+  }
+  #figure.relative{
+  position: relative;
+  width: 400px;
+  height: 200px;;
 }
-.textwrap{
-  float: left;
-  margin:1px;
+#bio-name.absolute{
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0px;
+  width: 200px;
+  height: 100px;
 }
 
 </style>
-
 <body>
 
   <header>
@@ -42,21 +80,10 @@
   <main class="container">
     <section id="main-bio">
       <section id="figure">
-        <div class="absolute">
         <h2 id="bio-name">Your Name</h2>
-        </div>
-
-        <img id="bio-image"class="textwrap" src="https://placehold.it/200x200" alt="Your Name">
+        <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name" style="vertical-align:middle;margin:0px 50px">
       </section>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-         Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of 
-         the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the 
-         cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes 
-         from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
-          by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-         </p>
+      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
     </section>
 
     <aside id="contact-info">
