@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Visualization Dashboard Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" media="screen">
+        <link type="text/css" href="style.css" rel="stylesheet" media="all" >
+        <script src="media-query.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="topnav" id="myTopnav">
+                <button class="button button1" style="margin-left:60px;">
+                    <h2 style="margin: 0;"> 
+                        <a href="landing-page.html" style="color:white;font-size:22px;">
+                            Latitude
+                        </a></h2></a>
+                </button>
+    
+                <a href="data.html">Data</a>
+                <a href="‪comparison.html">Comparison</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Plots
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                
+                  
+                    <div class="dropdown-content">
+                        <a href="Max_Temp.html">Max Temperature</a>
+                        <a href="Humidity.html">Humidity</a>
+                        <a href="Cloudiness.html">Cloudiness</a>
+                        <a href="Wind_Speed.html">Wind Speed</a>
+                    </div>    
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </header>
+
+
+        <div id="container">
+            <div class="row">
+                <div class="col-md-12" style="height:50px;">
+                    <!--Spacing between Nav bar and container-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 clem" id="col-7" style="width:100%;height:800px;margin-bottom: 50px;">
+                    <h1>Cloudiness</h1><hr>
+                    <img style="height: 500px;width:650px;margin-left:50px;margin-right:50px;" id ="main-image" 
+                    src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig3.png"/>
+                    <p style="padding:0px;">
+                   The code above plots the the relationship between latitude of each city in our data set and cloudiness. 
+                   There is no apparent relationship between the two.
+                    </p>
+                </div>
+                
+                <div class="col-md-1">
+                    <!--Space between main and aside-->
+                </div>
+            
+                <div class="col-md-3 clem" style="margin-bottom: 1100px; padding-top: 50px;">
+                    <h1 >Visualizations<hr></h1>
+            
+                    <img src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig1.png"
+                    style="height:150px;width:150px;">
+                
+
+            
+                    <img src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig2.png"
+                    style="height:150px;width:150px;">
+                
+
+              
+                    <img src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig3.png"
+                    alt="Cloudiness" border="2" style="height:150px;width:150px;border-color: chocolate;">
+            
+
+                
+                    <img src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig4.png"
+                    style="height:150px;width:150px;">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <footer>Copyright Coding Bootcamp 2020</footer>
+                </div>
+            </div>
+        </div>
+         
+    
+    </body>
+</html>
+
